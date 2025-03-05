@@ -2,99 +2,93 @@ import React from 'react';
 import { 
   Menubar, 
   MenubarMenu, 
-  MenubarTrigger, 
-  MenubarContent, 
-  MenubarItem 
+  MenubarTrigger
 } from '@/components/ui/menubar';
 import { 
   Hand, 
   MousePointer, 
   Square, 
   Type, 
+  LetterText,
   Diamond, 
-  CircleDot, 
   ArrowRight, 
   Eraser, 
   Image, 
   Layers, 
-  Lock, 
-  Undo, 
-  Redo 
+  Lock,
+  Circle
 } from 'lucide-react';
 
 const ToolBar = () => {
   return (
-    <Menubar className="flex h-12 rounded-none border-b border-border bg-background px-2 py-1">
-      <MenubarMenu>
-        <MenubarTrigger className="flex items-center gap-1 px-2 py-1 hover:bg-accent hover:text-accent-foreground">
-          <MousePointer size={16} />
-          Select
-        </MenubarTrigger>
-      </MenubarMenu>
+    <div className="fixed top-4 left-1/2 transform -translate-x-1/2 bg-background shadow-md rounded-lg p-2 flex gap-2">
+      <Menubar className="flex gap-2 bg-transparent border-none shadow-none">
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <MousePointer size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
 
-      <MenubarMenu>
-        <MenubarTrigger className="flex items-center gap-1 px-2 py-1 hover:bg-accent hover:text-accent-foreground">
-          <Hand size={16} />
-          Hand
-        </MenubarTrigger>
-      </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <Hand size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
 
-      <MenubarMenu>
-        <MenubarTrigger className="flex items-center gap-1 px-2 py-1 hover:bg-accent hover:text-accent-foreground">
-          <Square size={16} />
-          Rectangle
-        </MenubarTrigger>
-      </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <Square size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
 
-      <MenubarMenu>
-        <MenubarTrigger className="flex items-center gap-1 px-2 py-1 hover:bg-accent hover:text-accent-foreground">
-          <Diamond size={16} />
-          Diamond
-        </MenubarTrigger>
-      </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <Diamond size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <Circle size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
 
-      <MenubarMenu>
-        <MenubarTrigger className="flex items-center gap-1 px-2 py-1 hover:bg-accent hover:text-accent-foreground">
-          <ArrowRight size={16} />
-          Arrow
-        </MenubarTrigger>
-      </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <ArrowRight size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
 
-      <MenubarMenu>
-        <MenubarTrigger className="flex items-center gap-1 px-2 py-1 hover:bg-accent hover:text-accent-foreground">
-          <Type size={16} />
-          Text
-        </MenubarTrigger>
-      </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <LetterText size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
 
-      <MenubarMenu>
-        <MenubarTrigger className="flex items-center gap-1 px-2 py-1 hover:bg-accent hover:text-accent-foreground">
-          <Image size={16} />
-          Image
-        </MenubarTrigger>
-      </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <Image size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
 
-      <MenubarMenu>
-        <MenubarTrigger className="flex items-center gap-1 px-2 py-1 hover:bg-accent hover:text-accent-foreground">
-          <Layers size={16} />
-          Frame
-        </MenubarTrigger>
-      </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <Layers size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
 
-      <MenubarMenu>
-        <MenubarTrigger className="flex items-center gap-1 px-2 py-1 hover:bg-accent hover:text-accent-foreground">
-          <Eraser size={16} />
-          Eraser
-        </MenubarTrigger>
-      </MenubarMenu>
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <Eraser size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
 
-      <MenubarMenu>
-        <MenubarTrigger className="flex items-center gap-1 px-2 py-1 hover:bg-accent hover:text-accent-foreground">
-          <Lock size={16} />
-          Lock
-        </MenubarTrigger>
-      </MenubarMenu>
-    </Menubar>
+        <MenubarMenu>
+          <MenubarTrigger className="flex items-center gap-1 p-2 rounded-md hover:bg-accent hover:text-accent-foreground">
+            <Lock size={16} />
+          </MenubarTrigger>
+        </MenubarMenu>
+      </Menubar>
+    </div>
   );
 };
 
