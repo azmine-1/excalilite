@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",             // Ensures modern JavaScript support
+    "module": "CommonJS",        // Required for Node.js
+    "outDir": "./dist",          // Outputs compiled JS files to "dist/"
+    "rootDir": "./src",          // Sets "src/" as the root directory
+    "strict": true,              // Enables strict TypeScript checking
+    "esModuleInterop": true,     // Allows easier imports for Node.js modules
+    "resolveJsonModule": true,   // Enables importing .json files
+    "forceConsistentCasingInFileNames": true, // Avoids OS-specific casing issues
+    "skipLibCheck": true         // Speeds up compilation
+  },
+  "include": ["src"]  // Ensures TypeScript only compiles files inside "src/"
+}
